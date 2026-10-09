@@ -4,331 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>pizzashop</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@400&family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="header">
-    <div class="container header__inner">
-      <a href="#home" class="logo">pizzashop</a>
+  <header class="wrap header">
+    <a href="#" class="logo">pizzashop</a>
+    <nav>
+      <a href="#" class="on">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#events">Events</a>
+      <a href="#about">About us</a>
+    </nav>
+    <a href="#" class="btn login">Log in</a>
+    <a href="#" class="btn bag"><img src="img/bag.png" alt="Cart"></a>
+  </header>
 
-      <nav class="nav">
-        <a href="#home" class="nav__link nav__link--active">Home</a>
-        <a href="#menu" class="nav__link">Menu</a>
-        <a href="#events" class="nav__link">Events</a>
-        <a href="#about" class="nav__link">About us</a>
-      </nav>
+  <section class="wrap hero">
+    <div>
+      <h1>The Fastest<br>Pizza <img src="img/lightning.svg" alt=""> Delivery</h1>
+      <p class="gray">We will deliver juicy pizza for your family in 30 minutes, if the courier is late - <b>Pizza is free</b>!</p>
+      <p class="gray">Cooking process:</p>
+      <div class="video">
+        <img src="img/cooking.png" alt="">
+        <img class="ring" src="img/play-ring.svg" alt="">
+        <img class="arrow" src="img/play-arrow.svg" alt="">
+      </div>
+      <a href="#menu" class="outline"><span class="btn">To order</span>Pizza-Menu</a>
+    </div>
+    <img class="photo" src="img/hero.jpg" alt="Pizza">
+  </section>
 
-      <div class="header__actions">
-        <a href="#" class="btn-login">Log in</a>
-        <a href="#" class="btn-bag" aria-label="Cart">
-          <img src="img/bag.png" alt="">
-        </a>
+  <section class="wrap" id="menu">
+    <h2>Menu</h2>
+
+    <div class="filters">
+      <a href="#" class="btn">Show All</a>
+      <a href="#">Meat</a>
+      <a href="#">Vegetarian</a>
+      <a href="#">Sea products</a>
+      <a href="#">Mushroom</a>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="img/pizza-1.png" alt="">
+        <h3>Italian</h3>
+        <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+        <div class="sizes"><span>22</span><span class="on">28</span><span>33</span></div>
+        <a href="#" class="more">+ Ingridients</a>
+        <div class="row"><b>8,35<sup>$</sup></b><span class="qty"><i>-</i>1<i class="on">+</i></span></div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+      <div class="card">
+        <img src="img/pizza-2.png" alt="">
+        <h3>Venecia</h3>
+        <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+        <div class="sizes"><span>22</span><span class="on">28</span><span>33</span></div>
+        <a href="#" class="more">+ Ingridients</a>
+        <div class="row"><b>7,35<sup>$</sup></b><span class="qty"><i>-</i>1<i class="on">+</i></span></div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+      <div class="card">
+        <img src="img/pizza-3.png" alt="">
+        <h3>Meat</h3>
+        <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+        <div class="sizes"><span>22</span><span class="on">28</span><span>33</span></div>
+        <a href="#" class="more">+ Ingridients</a>
+        <div class="row"><b>9,35<sup>$</sup></b><span class="qty"><i>-</i>1<i class="on">+</i></span></div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+      <div class="card">
+        <img src="img/pizza-4.png" alt="">
+        <h3>Cheese</h3>
+        <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+        <div class="sizes"><span>22</span><span class="on">28</span><span>33</span></div>
+        <a href="#" class="more">+ Ingridients</a>
+        <div class="row"><b>8,35<sup>$</sup></b><span class="qty"><i>-</i>1<i class="on">+</i></span></div>
+        <a href="#" class="btn">Order Now</a>
       </div>
     </div>
-  </header>
-  <main>
-    <!-- 1 -->
-    <section class="hero" id="home">
-      <span class="ghost ghost--hero-1" aria-hidden="true">Pizza</span>
-      <span class="ghost ghost--hero-2" aria-hidden="true">Pizza</span>
-      <span class="ghost ghost--hero-3" aria-hidden="true">Pizza</span>
 
-      <div class="container hero__inner">
-        <div class="hero__text">
-          <h1 class="hero__title">
-            <span>The Fastest</span>
-            <span>Pizza <img class="hero__bolt" src="img/lightning.svg" alt=""> Delivery</span>
-          </h1>
+    <div class="popular">
+      <img src="img/popular.png" alt="">
+      <h2>MOST POPULAR PIZZA</h2>
+    </div>
 
-          <p class="hero__lead">
-            We will deliver juicy pizza for your family in 30 minutes, if the courier is late - <b>pizza is free</b>!
-          </p>
-
-          <p class="hero__process">Cooking process:</p>
-          <a href="#" class="video" aria-label="Play video">
-            <img class="video__cover" src="img/cooking.png" alt="">
-            <img class="video__ring" src="img/play-ring.svg" alt="">
-            <img class="video__arrow" src="img/play-arrow.svg" alt="">
-          </a>
-
-          <div class="hero__buttons">
-            <span class="hero__outline">Pizza-Menu</span>
-            <a href="#menu" class="hero__order">To order</a>
-            <a href="#menu" class="hero__menu-link" aria-label="Pizza-Menu"></a>
-          </div>
-        </div>
-
-        <div class="hero__photo">
-          <img src="img/hero.jpg" alt="Pizza">
-        </div>
+    <div class="cards">
+      <div class="card">
+        <img src="img/pizza-5.png" alt="">
+        <h3>Argentina</h3>
+        <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+        <div class="sizes"><span>22</span><span class="on">28</span><span>33</span></div>
+        <a href="#" class="more">+ Ingridients</a>
+        <div class="row"><b>7,35<sup>$</sup></b><span class="qty"><i>-</i>1<i class="on">+</i></span></div>
+        <a href="#" class="btn">Order Now</a>
       </div>
-    </section>
-
-    <!-- 2 -->
-    <section class="menu" id="menu">
-      <span class="ghost ghost--menu-1" aria-hidden="true">Menu</span>
-      <span class="ghost ghost--menu-2" aria-hidden="true">Menu</span>
-      <span class="ghost ghost--menu-3" aria-hidden="true">Menu</span>
-
-      <div class="container">
-        <h2 class="title">Menu</h2>
-
-        <div class="filters">
-          <a href="#" class="filter filter--active">Show All</a>
-          <a href="#" class="filter">Meat</a>
-          <a href="#" class="filter">Vegetarian</a>
-          <a href="#" class="filter">Sea products</a>
-          <a href="#" class="filter">Mushroom</a>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <img class="card__img" src="img/pizza-1.png" alt="Italian">
-            <h3 class="card__name">Italian</h3>
-            <p class="card__text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
-            <div class="sizes"><span>22</span><span class="is-active">28</span><span>33</span></div>
-            <a href="#" class="card__more">+ Ingridients</a>
-            <div class="card__row">
-              <div class="price">8,35<sup>$</sup></div>
-              <div class="qty"><span class="qty__minus">-</span><span class="qty__num">1</span><span class="qty__plus">+</span></div>
-            </div>
-            <a href="#" class="card__order">Order Now</a>
-          </article>
-
-          <article class="card">
-            <img class="card__img" src="img/pizza-2.png" alt="Venecia">
-            <h3 class="card__name">Venecia</h3>
-            <p class="card__text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
-            <div class="sizes"><span>22</span><span class="is-active">28</span><span>33</span></div>
-            <a href="#" class="card__more">+ Ingridients</a>
-            <div class="card__row">
-              <div class="price">7,35<sup>$</sup></div>
-              <div class="qty"><span class="qty__minus">-</span><span class="qty__num">1</span><span class="qty__plus">+</span></div>
-            </div>
-            <a href="#" class="card__order">Order Now</a>
-          </article>
-
-          <article class="card">
-            <img class="card__img" src="img/pizza-3.png" alt="Meat">
-            <h3 class="card__name">Meat</h3>
-            <p class="card__text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
-            <div class="sizes"><span>22</span><span class="is-active">28</span><span>33</span></div>
-            <a href="#" class="card__more">+ Ingridients</a>
-            <div class="card__row">
-              <div class="price">9,35<sup>$</sup></div>
-              <div class="qty"><span class="qty__minus">-</span><span class="qty__num">1</span><span class="qty__plus">+</span></div>
-            </div>
-            <a href="#" class="card__order">Order Now</a>
-          </article>
-
-          <article class="card">
-            <img class="card__img" src="img/pizza-4.png" alt="Cheese">
-            <h3 class="card__name">Cheese</h3>
-            <p class="card__text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
-            <div class="sizes"><span>22</span><span class="is-active">28</span><span>33</span></div>
-            <a href="#" class="card__more">+ Ingridients</a>
-            <div class="card__row">
-              <div class="price">8,35<sup>$</sup></div>
-              <div class="qty"><span class="qty__minus">-</span><span class="qty__num">1</span><span class="qty__plus">+</span></div>
-            </div>
-            <a href="#" class="card__order">Order Now</a>
-          </article>
-        </div>
-
-        <div class="popular">
-          <img src="img/popular.png" alt="">
-          <h2 class="popular__title">MOST POPULAR PIZZA</h2>
-        </div>
-
-        <div class="cards cards--second">
-          <article class="card">
-            <img class="card__img" src="img/pizza-5.png" alt="Argentina">
-            <h3 class="card__name">Argentina</h3>
-            <p class="card__text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
-            <div class="sizes"><span>22</span><span class="is-active">28</span><span>33</span></div>
-            <a href="#" class="card__more">+ Ingridients</a>
-            <div class="card__row">
-              <div class="price">7,35<sup>$</sup></div>
-              <div class="qty"><span class="qty__minus">-</span><span class="qty__num">1</span><span class="qty__plus">+</span></div>
-            </div>
-            <a href="#" class="card__order">Order Now</a>
-          </article>
-
-          <article class="card">
-            <img class="card__img" src="img/pizza-6.png" alt="Gribnaya">
-            <h3 class="card__name">Gribnaya</h3>
-            <p class="card__text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
-            <div class="sizes"><span>22</span><span class="is-active">28</span><span>33</span></div>
-            <a href="#" class="card__more">+ Ingridients</a>
-            <div class="card__row">
-              <div class="price">6,35<sup>$</sup></div>
-              <div class="qty"><span class="qty__minus">-</span><span class="qty__num">1</span><span class="qty__plus">+</span></div>
-            </div>
-            <a href="#" class="card__order">Order Now</a>
-          </article>
-
-          <article class="card">
-            <img class="card__img" src="img/pizza-7.png" alt="Tomato">
-            <h3 class="card__name">Tomato</h3>
-            <p class="card__text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
-            <div class="sizes"><span>22</span><span class="is-active">28</span><span>33</span></div>
-            <a href="#" class="card__more">+ Ingridients</a>
-            <div class="card__row">
-              <div class="price">7,35<sup>$</sup></div>
-              <div class="qty"><span class="qty__minus">-</span><span class="qty__num">1</span><span class="qty__plus">+</span></div>
-            </div>
-            <a href="#" class="card__order">Order Now</a>
-          </article>
-
-          <article class="card">
-            <img class="card__img" src="img/pizza-8.png" alt="Italian x2">
-            <h3 class="card__name">Italian x2</h3>
-            <p class="card__text">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
-            <div class="sizes"><span>22</span><span class="is-active">28</span><span>33</span></div>
-            <a href="#" class="card__more">+ Ingridients</a>
-            <div class="card__row">
-              <div class="price">8,35<sup>$</sup></div>
-              <div class="qty"><span class="qty__minus">-</span><span class="qty__num">1</span><span class="qty__plus">+</span></div>
-            </div>
-            <a href="#" class="card__order">Order Now</a>
-          </article>
-        </div>
+      <div class="card">
+        <img src="img/pizza-6.png" alt="">
+        <h3>Gribnaya</h3>
+        <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+        <div class="sizes"><span>22</span><span class="on">28</span><span>33</span></div>
+        <a href="#" class="more">+ Ingridients</a>
+        <div class="row"><b>6,35<sup>$</sup></b><span class="qty"><i>-</i>1<i class="on">+</i></span></div>
+        <a href="#" class="btn">Order Now</a>
       </div>
-    </section>
-
-    <!-- 3 -->
-    <section class="events" id="events">
-      <span class="ghost ghost--events-1" aria-hidden="true">Events</span>
-      <span class="ghost ghost--events-2" aria-hidden="true">Events</span>
-
-      <div class="container events__inner">
-        <div class="events__row events__row--1">
-          <a href="#" class="tile tile--cooking">
-            <img class="tile__bg" src="img/ev-cooking.png" alt="">
-            <h3 class="tile__title">HOW WE COOKING</h3>
-            <span class="tile__btn">More</span>
-          </a>
-          <a href="#" class="tile tile--blog">
-            <img class="tile__bg" src="img/ev-blog.png" alt="">
-            <h3 class="tile__title">OUR BLOG</h3>
-            <span class="tile__btn">More</span>
-          </a>
-          <div class="events__intro">
-            <h2 class="title title--right">Events</h2>
-            <p>There are regular events in our pizzeria that will allow you to eat delicious food for a lower price!</p>
-          </div>
-        </div>
-
-        <div class="events__row events__row--2">
-          <a href="#" class="tile tile--two">
-            <img class="tile__bg" src="img/ev-two-pizza.png" alt="">
-            <h3 class="tile__title">TWO PIZZA FOR 1 PRICE</h3>
-            <span class="tile__btn">More</span>
-          </a>
-          <a href="#" class="tile tile--kitchen">
-            <img class="tile__bg" src="img/ev-kitchen.png" alt="">
-            <h3 class="tile__title">KITCHEN TOUR</h3>
-            <span class="tile__btn">More</span>
-          </a>
-        </div>
-
-        <div class="events__row events__row--3">
-          <a href="#" class="tile">
-            <img class="tile__bg" src="img/ev-coffee.png" alt="">
-            <h3 class="tile__title">FREE COFFEE FOR 3 PIZZA</h3>
-            <span class="tile__btn">More</span>
-          </a>
-          <a href="#" class="tile">
-            <img class="tile__bg" src="img/ev-instagram.png" alt="">
-            <h3 class="tile__title">OUR INSTAGRAM</h3>
-            <span class="tile__btn">More</span>
-          </a>
-          <a href="#" class="tile">
-            <img class="tile__bg" src="img/ev-choose.png" alt="">
-            <h3 class="tile__title">WHERE ARE YOU CHOOSE US?</h3>
-            <span class="tile__btn">More</span>
-          </a>
-        </div>
+      <div class="card">
+        <img src="img/pizza-7.png" alt="">
+        <h3>Tomato</h3>
+        <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+        <div class="sizes"><span>22</span><span class="on">28</span><span>33</span></div>
+        <a href="#" class="more">+ Ingridients</a>
+        <div class="row"><b>7,35<sup>$</sup></b><span class="qty"><i>-</i>1<i class="on">+</i></span></div>
+        <a href="#" class="btn">Order Now</a>
       </div>
-
-      <img class="deco deco--egg" src="img/egg.png" alt="">
-      <img class="deco deco--burrito" src="img/burrito.png" alt="">
-      <img class="deco deco--cup" src="img/cup.png" alt="">
-    </section>
-
-    <!-- 4 -->
-    <section class="about" id="about">
-      <span class="ghost ghost--about-1" aria-hidden="true">About</span>
-      <span class="ghost ghost--about-2" aria-hidden="true">About</span>
-
-      <div class="container about__inner">
-        <div class="about__text">
-          <h2 class="title title--left">About us</h2>
-          <p class="about__p">In just a couple of years, we have opened 6 outlets in different cities: Kazan, Chelyabinsk, Ufa, Samara, Izhevsk, and in the future we plan to develop the network in other major cities of Russia.</p>
-
-          <div class="about__pizzas" aria-hidden="true">
-            <img class="ap ap--1" src="img/about-1.png" alt="">
-            <img class="ap ap--2" src="img/about-2.png" alt="">
-            <img class="ap ap--3" src="img/about-3.png" alt="">
-            <img class="ap ap--4" src="img/about-4.png" alt="">
-            <img class="ap ap--5" src="img/about-5.png" alt="">
-          </div>
-
-          <p class="about__p about__p--second">The kitchen of each point is at least: 400-500 sq. m. meters, hundreds of employees, smoothly performing work in order to receive / prepare / form / deliver customer orders on time.</p>
-        </div>
-
-        <div class="about__photo">
-          <img src="img/about-photo.png" alt="Pizza">
-        </div>
+      <div class="card">
+        <img src="img/pizza-8.png" alt="">
+        <h3>Italian x2</h3>
+        <p>Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+        <div class="sizes"><span>22</span><span class="on">28</span><span>33</span></div>
+        <a href="#" class="more">+ Ingridients</a>
+        <div class="row"><b>8,35<sup>$</sup></b><span class="qty"><i>-</i>1<i class="on">+</i></span></div>
+        <a href="#" class="btn">Order Now</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <section class="wrap events" id="events">
+    <a href="#" class="tile" style="background-image: url(img/ev-cooking.png)">
+      <h3>HOW WE COOKING</h3><span class="btn">More</span>
+    </a>
+    <a href="#" class="tile" style="background-image: url(img/ev-blog.png)">
+      <h3>OUR BLOG</h3><span class="btn">More</span>
+    </a>
+    <div class="intro">
+      <h2>Events</h2>
+      <p class="gray">There are regular events in our pizzeria that will allow you to eat delicious food for a lower price!</p>
+    </div>
+    <a href="#" class="tile wide" style="background-image: url(img/ev-two-pizza.png)">
+      <h3>TWO PIZZA FOR 1 PRICE</h3><span class="btn">More</span>
+    </a>
+    <a href="#" class="tile wide" style="background-image: url(img/ev-kitchen.png)">
+      <h3>KITCHEN TOUR</h3><span class="btn">More</span>
+    </a>
+    <a href="#" class="tile" style="background-image: url(img/ev-coffee.png)">
+      <h3>FREE COFFEE FOR 3 PIZZA</h3><span class="btn">More</span>
+    </a>
+    <a href="#" class="tile" style="background-image: url(img/ev-instagram.png)">
+      <h3>OUR INSTAGRAM</h3><span class="btn">More</span>
+    </a>
+    <a href="#" class="tile" style="background-image: url(img/ev-choose.png)">
+      <h3>WHERE ARE YOU CHOOSE US?</h3><span class="btn">More</span>
+    </a>
+    <img class="egg" src="img/egg.png" alt="">
+    <img class="cup" src="img/cup.png" alt="">
+    <img class="burrito" src="img/burrito.png" alt="">
+  </section>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <a href="#home" class="logo logo--small">pizzashop</a>
-
-      <div class="footer__cols">
-        <div class="footer__col">
-          <h4>Home</h4>
-          <a href="#">To Order</a>
-          <a href="#about">About us</a>
-          <a href="#events">Events</a>
-          <a href="#menu">Menu</a>
-        </div>
-        <div class="footer__col">
-          <h4>Events</h4>
-          <a href="#">3 Pizza 1 Free Coffee</a>
-          <a href="#">2 Pizza for 1 Price</a>
-          <a href="#">Kitchen Tour</a>
-        </div>
-        <div class="footer__col">
-          <h4>Menu</h4>
-          <a href="#">Show All</a>
-          <a href="#">Seaproducts</a>
-          <a href="#">Vegan</a>
-          <a href="#">Meat</a>
-        </div>
-        <div class="footer__col">
-          <h4>About Us</h4>
-          <a href="#">Our History</a>
-          <a href="#">Why We?</a>
-        </div>
+  <section class="wrap about" id="about">
+    <div>
+      <h2>About us</h2>
+      <p class="gray">In just a couple of years, we have opened 6 outlets in different cities: Kazan, Chelyabinsk, Ufa, Samara, Izhevsk, and in the future we plan to develop the network in other major cities of Russia.</p>
+      <div class="pizzas">
+        <img src="img/about-1.png" alt=""><img src="img/about-2.png" alt=""><img src="img/about-4.png" alt=""><img src="img/about-5.png" alt=""><img src="img/about-3.png" alt="">
       </div>
+      <p class="gray">The kitchen of each point is at least: 400-500 sq. m. meters, hundreds of employees, smoothly performing work in order to receive / prepare / form / deliver customer orders on time.</p>
+    </div>
+    <img class="photo" src="img/about.png" alt="Pizza">
+  </section>
 
-      <div class="footer__bottom">
-        <a href="tel:+79373335533" class="footer__phone">+7 (937) 333-55-33</a>
-        <div class="socials">
-          <a href="#" class="social social--ig" aria-label="Instagram"></a>
-          <a href="#" class="social social--tw" aria-label="Twitter"></a>
-          <a href="#" class="social social--fb" aria-label="Facebook"></a>
-        </div>
-      </div>
+  <footer>
+    <div class="wrap">
+      <a href="#" class="logo">pizzashop</a>
+      <div><h4>Home</h4><a href="#">To Order</a><a href="#about">About us</a><a href="#events">Events</a><a href="#menu">Menu</a></div>
+      <div><h4>Events</h4><a href="#">3 Pizza 1 Free Coffee</a><a href="#">2 Pizza for 1 Price</a><a href="#">Kitchen Tour</a></div>
+      <div><h4>Menu</h4><a href="#">Show All</a><a href="#">Seaproducts</a><a href="#">Vegan</a><a href="#">Meat</a></div>
+      <div><h4>About Us</h4><a href="#">Our History</a><a href="#">Why We?</a></div>
+    </div>
+    <div class="wrap bottom">
+      <a href="tel:+79373335533" class="orange">+7 (937) 333-55-33</a>
+      <img src="img/social.svg" alt="">
     </div>
   </footer>
 
